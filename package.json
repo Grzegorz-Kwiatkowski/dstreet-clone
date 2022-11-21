@@ -1,0 +1,28 @@
+{
+  "name": "dstreet-clone",
+  "version": "1.0.0",
+  "description": "Shopping Online - Clothes",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/server.js",
+    "start": "concurrently \"nodemon backend/server.js\" \"cd frontend && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grzegorz-Kwiatkowski/dstreet-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grzegorz-Kwiatkowski/dstreet-clone/issues"
+  },
+  "homepage": "https://github.com/Grzegorz-Kwiatkowski/dstreet-clone#readme"
+}
