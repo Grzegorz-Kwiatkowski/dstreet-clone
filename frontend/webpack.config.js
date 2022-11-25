@@ -23,7 +23,21 @@ module.exports = {
           //css
           { test: /\.css$/, use: ['style-loader', 'css-loader'] },
           //images
-          { test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/, type: 'asset/resource' },
+          {
+            test: /\.(gif|svg|png|avif|jpe?g|jpg)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'assets/images/',
+                  publicPath:'assets/images/'
+                }
+              }
+            ]
+          },
+            //html-loader
+           
           //js for babel
           {
             test: /\.js$/,

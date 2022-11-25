@@ -8,6 +8,8 @@ app.get('/api/products', (req, res) => {
     res.send(data.products);
 });
 
+app.use(express.static('frontend/assets'));
+
 app.listen(5000, () => {
   console.log('serve at http://localhost:5000');
 });

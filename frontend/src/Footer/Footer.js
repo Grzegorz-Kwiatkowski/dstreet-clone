@@ -2,7 +2,7 @@
 const Footer = {
     render : ()=> {
         return `
-            <div id="footer"><h1>Footer</h1></div>
+            <div id="footer"><h1></h1></div>
         `;
     }
 }
