@@ -8,6 +8,13 @@ app.get('/api/products', (req, res) => {
     res.send(data.products);
 });
 
+app.get('/api/delivery', (req, res) => {
+  res.send(data.delivery);
+});
+
+app.get('/api/international_shipments',(req,res)=>{
+  res.send(data.international_shipments);
+})
 app.use(express.static('frontend/assets'));
 
 app.listen(5000, () => {

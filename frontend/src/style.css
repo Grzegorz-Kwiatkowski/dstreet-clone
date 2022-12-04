@@ -1,6 +1,6 @@
 
 body {
-   
+   box-sizing: border-box;
 }
 
 /*TopNav*/
@@ -575,7 +575,7 @@ body {
 .delivery table thead tr th {
     color: #fff;
     border: 1px solid #000;
-    background-color: lighten(#000, 15%);
+    background-color: #000;
     font-size: .8rem;
     padding: .7rem 1.5rem;
     text-transform: uppercase;
@@ -601,4 +601,463 @@ body {
 }
 .delivery ol li span {
     font-weight: 500;
+}
+
+/* SocialMedia */
+
+.socialMedia {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid lightgray;
+    border-top:1px solid lightgray;
+    padding: 15px 0;
+}
+.socialMedia a img {
+    width:30px;
+    height:30px;
+    transition-duration: .3s;
+}
+.socialMedia a img:hover {
+    opacity:.7; 
+}
+.socialMedia a:nth-child(n+2) {
+    margin-left:30px;
+}
+
+/* NavigationFooter */
+
+.navigationFooter {
+    height:fit-content;
+    display:flex;
+    justify-content: space-evenly;
+}
+.navigationFooter dl dt {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.navigationFooter dl dd {
+    display:block;
+    margin-left: 0;
+    font-size:12px;
+    font-weight: 500;
+    padding:3px 0;
+}
+.navigationFooter dl dd a {
+    text-decoration: none;
+    color:#000;
+    font-weight: 400;
+}
+.navigationFooter dl dd:hover {
+    color:gray;
+    cursor:pointer;
+}
+.navigationFooter dl dd:hover a {
+    color:#312F2F;
+}
+.navigationFooter dl dt,
+.navigationFooter dl dd {
+    width:100%;
+}
+.navigationFooter__phone {
+
+}
+
+/*AboutUs - Footer*/
+
+.aboutUs {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.aboutUs__container {
+    width:70%;
+}
+.aboutUs__header {
+    text-align: center  ;
+    border-bottom:1px solid lightgray;
+}
+.aboutUs__content {
+    display:flex;
+    padding-top:20px;
+}
+.aboutUs__content-description {
+    width:60%;
+}
+.aboutUs__content-description img {
+    width:90%; 
+}
+.aboutUs__content-image {
+    padding:20px 0;
+}
+.aboutUs__content-image img {
+    width:90%;
+    height: 100%;
+    display:block;
+    margin:0 auto;
+}
+.aboutUs__content-benefits {
+    padding-top:25px;
+}
+.aboutUs__content-benefits aside h2 {
+    font-size:17px;
+}
+
+/* Contact */
+
+.contact {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+    /* border:2px solid red; */
+}
+.contact__container {
+    width:70%;
+    /* border:2px solid green; */
+}
+.contact__header {
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+.contact__options {
+    /* border:2px solid gray; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact__options-form {
+    box-sizing: border-box;
+    /* border:2px solid blue; */
+    width:50%;
+}
+.contact__options-address {
+    box-sizing: border-box;
+    /* border:2px solid red; */
+    width:50%;
+}
+.contact__options-data {
+    box-sizing: border-box;
+    width:50%;
+    /* border:2px solid black; */
+}
+.contact__options-email {
+    /* border:2px solid red; */
+    width:50%;
+    box-sizing: border-box;
+}
+.contact__options-email div aside {
+    display:flex;
+    justify-content: space-between;
+}
+
+/* discountProgram */
+
+.discountProgram {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.discountProgram__container {
+    width:70%;
+}
+.discountProgram__header {
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+.discountProgram__wrapper {
+    display:flex;
+    overflow: hidden;
+}
+.discountProgram__wrapper-text {
+    width:50%;
+}
+.discountProgram__wrapper-image {
+    width:50%;
+}
+.discountProgram__wrapper-image img {
+    width:90%;
+    height: auto;
+}
+
+/* sizing */
+
+.sizing {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.sizing__container {
+    width:70%;  
+}
+.sizing__header {
+    text-align: center;
+}
+.sizing__wrapper {
+    display: flex;
+}
+
+/* privacyPolicy */
+
+.privacyPolicy {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.privacyPolicy__container {
+    width:70%;
+}
+.privacyPolicy__header {
+    text-align: center;
+    margin-bottom:90px;
+}
+.privacyPolicy__header h1 {
+    font-size:30px;
+}
+.privacyPolicy__intro h2{
+    text-align: center;
+}
+.privacyPolicy__personalData,
+.privacyPolicy__collectingData {
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: left;
+}
+.privacyPolicy__personalData h2,
+.privacyPolicy__dataSafety h2,
+.privacyPolicy__collectingData h2,
+.privacyPolicy__dataRecipient h2{
+    font-size: 20px;
+}
+.privacyPolicy__personalData ul li,
+.privacyPolicy__dataSafety ul li,
+.privacyPolicy__collectingData ul li,
+.privacyPolicy__dataRecipient ul li{
+   font-size:15px;
+}
+
+/* howToBuy */
+
+.howToBuy {
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.howToBuy__container {
+    width:70%;
+}
+.howToBuy__header h1 {
+    text-align: center;
+}
+.howToBuy__header {
+    border-bottom:1px solid lightgray;
+}
+.howToBuy__info {
+    margin:45px 0;
+}
+.howToBuy section img {
+    width:90%;
+    height:auto;
+}
+
+/* photos-and-colors */
+
+.photos-and-colors {
+    display:flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+.photos-and-colors__container {
+    width:70%;
+}
+.photos-and-colors__header {
+    text-align: center;
+    border-bottom:1px solid lightgray;
+    padding:10px 0;
+}
+.photos-and-colors__content {
+    padding-top:20px;
+    display:flex;
+}
+.photos-and-colors__text {
+    width:60%;
+}
+.photos-and-colors__image img{
+  width:90%;
+  height:90%;
+}
+
+/* payments */
+
+.payments {
+    display:flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+.payments__container {
+    width:70%;
+}
+.payments__header {
+    text-align: center;
+    text-transform: uppercase;
+}
+.payments__sending-header {
+  display:flex;
+}
+.payments__sending-header img {
+    width:75px;
+    height:75px;
+}
+.payments__sending-content div{
+    display: flex;
+    justify-content: space-around;
+}
+.payments__sending-content-options div  {
+    text-align:left;
+}
+.payments__payu img {
+    display:block;
+    margin:0 auto;
+}
+.payments__payu header,
+.payments__paypal header{
+    display:flex;
+}
+.payments__payu header img,
+.payments__paypal header img,
+.payments__cashOnDelivery img {
+    width:100px;
+    height:75px;
+}
+.payments__cashOnDelivery {
+    display: flex;
+}
+
+/* deliveryTime */
+
+.deliveryTime {
+    display:flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+.deliveryTime__container {
+    width:70%;
+}
+.deliveryTime__header {
+    text-align: center;
+    margin-bottom:50px;
+}
+.deliveryTime__info {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0;
+}
+.deliveryTime__info p {
+    margin-left:15px;
+}
+.deliveryTime__table {
+    display:block;
+    margin:auto auto;
+}
+.deliveryTime__table table,
+.deliveryTime__table td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+.deliveryTime__table table thead tr th {
+    background-color:#000;
+    color:#fff;
+    text-align: center;
+    font-size:16px;
+    padding:10px;
+}
+.deliveryTime__table table tbody tr td img{
+    display:block;
+    margin:auto auto;
+    width:150px;
+    height:75px;
+}
+.deliveryTime__table table tbody tr td {
+    text-align:center;
+    padding:0 10px;
+}
+.deliveryTime__table table tbody tr td p {
+    text-align:center;
+}
+.deliveryTime__infoGlobal {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0;
+}
+.deliveryTime__infoGlobal img {
+    width:100px;
+    height:70px;
+}
+.deliveryTime__international_shipments {
+    display:flex;
+    justify-content: center;
+}
+.deliveryTime__international_shipments table {
+    width:100%;
+    border-collapse: collapse;
+}
+.deliveryTime__international_shipments table thead tr th {
+    background-color:#000;
+    color:#fff;
+    padding:10px;
+    font-size: 16px;
+}
+.deliveryTime__international_shipments table tbody tr td{
+    border:1px solid #000;
+    text-align: center;
+    padding:5px;
+}
+.deliveryTime__international_shipments table tbody tr td div img {
+    width:100px;
+    height:50px;
+    margin-right:15px;
+}
+.deliveryTime__international_shipments table tbody tr td div {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* deliveryTracking */
+
+.deliveryTracking {
+    display:flex;
+    justify-content: center;
+   
+}
+.deliveryTracking__container {
+    width:70%;
+}
+.deliveryTracking__header {
+    text-align: center;
+    padding:15px 0;
+    border-bottom: 1px solid lightgray;
+}
+.deliveryTracking__content {
+    margin:35px 0;
+}
+.deliveryTracking__content div h2 {
+    font-size:18px;
+}
+.deliveryTracking__content div p {
+    margin-left:20px;
+    font-size:14px;
+}
+.deliveryTracking__content div p a {
+    text-decoration:underline;
+    color:#000;
+    font-weight: 700;
+    transition-duration: 500ms;
+}
+.deliveryTracking__content div p a:hover {
+    text-decoration:none;
+    color:#25CED1;
+    font-weight: bold;
 }

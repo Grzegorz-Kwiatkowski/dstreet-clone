@@ -31,7 +31,6 @@ const Header = {
         }
         document.getElementById("newsletter__link").onclick = function() {
           document.getElementById("newsletter").classList.toggle("active");
-    
         }
     }
 }

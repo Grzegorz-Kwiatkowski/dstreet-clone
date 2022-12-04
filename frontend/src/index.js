@@ -6,11 +6,34 @@ import HomeScreen from './Main/components/HomeScreen';
 import Delivery from './Header/components/Delivery';
 import Complaints from './Header/components/Complaints'
 
+/*Footer*/
+import AboutUs from "./Footer/components/subpages/AboutUs";
+import Contact from './Footer/components/subpages/Contact';
+import DiscountProgram from './Footer/components/subpages/DiscountProgram';
+import Sizing from './Footer/components/subpages/Sizing';
+import PrivacyPolicy from './Footer/components/subpages/PrivacyPolicy';
+import HowToBuy from './Footer/components/subpages/HowToBuy';
+import PhotosAndColors from './Footer/components/subpages/Photos_And_Colors'
+import Payments from "./Footer/components/subpages/Payments"
+import DeliveryTime from "./Footer/components/subpages/DeliveryTime"
+import DeliveryTracking from './Footer/components/subpages/DeliveryTracking';
+
+
 const Router = async () => {
     const routes = {
         "/":HomeScreen,
         "/delivery":Delivery,
-        "/returns-and-complaints":Complaints
+        "/returns-and-complaints":Complaints,
+        "/about-us":AboutUs,
+        "/contact":Contact,
+        "/discount-program":DiscountProgram,
+        "/sizing":Sizing,
+        "/privacy-policy":PrivacyPolicy,
+        "/how-to-buy":HowToBuy,
+        "/photos-and-colors":PhotosAndColors,
+        "/payment-methods":Payments,
+        "/delivery-time":DeliveryTime,
+        "/delivery-tracking":DeliveryTracking
     }
 
 const parseRequestUrl = () => {
