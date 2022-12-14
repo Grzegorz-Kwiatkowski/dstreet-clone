@@ -1,3 +1,6 @@
+import '@fortawesome/fontawesome-free/js/fontawesome'
+
+
 import './style.css'
 
 import Header from './Header/Header'
@@ -62,8 +65,10 @@ const header = document.getElementById("header-container");
 header.innerHTML = Header.render();
 await Header.after_render();
 
+
 const main = document.getElementById("main-container");
 main.innerHTML = await screen.render();
+HomeScreen.after_render();
 
 const footer = document.getElementById("footer-container");
 footer.innerHTML = Footer.render();

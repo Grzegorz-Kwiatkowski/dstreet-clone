@@ -8,6 +8,7 @@ import step_7 from "../../../../assets/images/step-7.jpg"
 
 const HowToBuy = {
     render:()=>{
+        
         return `<div class="howToBuy">
             <div class="howToBuy__container">
                 <section class="howToBuy__header">
